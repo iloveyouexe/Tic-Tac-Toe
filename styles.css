@@ -1,44 +1,40 @@
+h1 {
+  text-align: center;
+}
 
 .board {
   padding: 3em;
-  text-align: center;
-  display: inline-block;
+}
+
+.row > div {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.row {
+  margin: auto;
+  height: 302px;
+  width: 302px;
+  clear: both;
 }
 
 .top-left,
 .top-middle,
-.top-right {
-  float: left;
-  height: 100px;
-  width: 100px;
-  border-bottom: 1px solid black;
-}
 .middle-left,
-.center,
-.middle-right {
-  float: left;
-  height: 100px;
-  width: 100px;
+.center {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }
+
 .bottom-left,
-.bottom-middle,
-.bottom-right {
-  float: left;
-  height: 100px;
-  width: 100px;
-  border-top: 1px solid black;
+.bottom-middle {
+  border-right: 1px solid black;
 }
 
-.topRow, .middleRow, .bottomRow {
-  clear: both;
-  margin: auto, 0;
-  width: 302px;
-}
-
-#columnA {
-    border-right: 1px solid black;
-}
-
-#columnC {
-    border-left: 1px solid black;
+.top-right,
+.middle-right {
+  border-bottom: 1px solid black;
 }
