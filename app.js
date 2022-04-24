@@ -68,7 +68,7 @@ function cellClicked(e) {
 
   function clear() {
     cells.forEach((cell) => {
-      cell.textContent = " ";
+      cell.textContent = "";
     });
   }
 }
